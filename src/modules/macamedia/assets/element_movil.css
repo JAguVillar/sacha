@@ -1,0 +1,46 @@
+@media only screen and (max-device-width: 768px) {
+  /* Evitar que las cosas se seleccionen al usar en movil*/
+  input,
+  textarea,
+  button,
+  select,
+  a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  /**/
+  /* Dar mas lugar al contenido principal. Reduce el padding*/
+  .el-main > div {
+    padding: 5px !important;
+  }
+
+  /* No hace falta un scroll grande en celulares*/
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  /* Agregar margen en los modales 
+  .el-dialog {
+    margin-left: 10px !important;
+  }*/
+  /* Bajar items de form cuando es movil*/
+  .el-form-item__content {
+    margin-left: 0px !important;
+  }
+  /* Alinear a la izquierda cuando es movil*/
+  .el-form-item__label {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  /* En movil se corta el selector de periodo */
+  .el-date-range-picker {
+    max-width: calc(100vw);
+    overflow: auto;
+  }
+
+  /* Lo mismo pasa con el time picker*/
+  .el-date-picker {
+    max-width: calc(100vw);
+    overflow: auto;
+  }
+}

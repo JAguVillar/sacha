@@ -1,0 +1,115 @@
+// tiempo de entrada
+.maca-slide-fade-enter-active {
+    transition: transform 100ms ease, opacity 100ms ease;
+}
+
+// tiempo de salida
+.maca-slide-fade-leave-active {
+    transition: transform 100ms ease, opacity 100ms ease;
+}
+
+// en orden: fin de entrada, comienzo salida
+// (osea cuando esta visible)
+.maca-slide-fade-enter-to,
+.maca-slide-fade-leave-from {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+// en orden: comienzo de entrada, fin de salida
+// (osea cuando no visible)
+.maca-slide-fade-enter-from {
+    transform: translateX(-10px);
+    opacity: 0;
+}
+.maca-slide-fade-leave-to {
+    transform: translateX(-30px);
+    opacity: 0;
+}
+
+// -------------------------------------------------------------------
+
+// tiempo de entrada
+.maca-fade-enter-active {
+    transition: opacity 300ms ease;
+}
+
+// tiempo de salida
+.maca-fade-leave-active {
+    transition: opacity 200ms ease;
+}
+
+// en orden: fin de entrada, comienzo salida
+// (osea cuando esta visible)
+.maca-fade-enter-to,
+.maca-fade-leave-from {
+    opacity: 1;
+}
+
+// en orden: comienzo de entrada, fin de salida
+// (osea cuando no visible)
+.maca-fade-enter-from {
+    opacity: 0;
+}
+.maca-fade-leave-to {
+    opacity: 0;
+}
+
+// -------------------------------------------------------------------
+
+// tiempo de entrada
+.maca-slide-down-fade-enter-active {
+    transition: transform 300ms ease, opacity 300ms ease;
+}
+
+// tiempo de salida
+.maca-slide-down-fade-leave-active {
+    transition: transform 300ms ease, opacity 300ms ease;
+}
+
+// en orden: fin de entrada, comienzo salida
+// (osea cuando esta visible)
+.maca-slide-down-fade-enter-to,
+.maca-slide-down-fade-leave-from {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+// en orden: comienzo de entrada, fin de salida
+// (osea cuando no visible)
+.maca-slide-down-fade-enter-from {
+    transform: translateY(-10px);
+    opacity: 0;
+}
+.maca-slide-down-fade-leave-to {
+    transform: translateY(0px);
+    opacity: 0;
+}
+
+// -------------------------------------------------------------------
+
+// tiempo de entrada
+.maca-quick-fade-enter-active {
+    transition: opacity 100ms ease;
+}
+
+// tiempo de salida
+.maca-quick-fade-leave-active {
+    transition: opacity 100ms ease;
+}
+
+// en orden: fin de entrada, comienzo salida
+// (osea cuando esta visible)
+.maca-quick-fade-enter-to,
+.maca-quick-fade-leave-from {
+    opacity: 1;
+}
+
+// en orden: comienzo de entrada, fin de salida
+// (osea cuando no visible)
+.maca-quick-fade-enter-from {
+    opacity: 0;
+}
+.maca-quick-fade-leave-to {
+    opacity: 0;
+}

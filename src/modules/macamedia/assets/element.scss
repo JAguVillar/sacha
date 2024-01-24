@@ -1,0 +1,8 @@
+@import "@/assets/theme_variables";
+@import "./element_correcciones";
+@import "./element_movil";
+
+/* Ubicación de la fuente, obligatoria 
+*/
+$--font-path: 'element-plus/lib/theme-chalk/fonts';
+@import "element-plus/theme-chalk/index";

@@ -1,0 +1,373 @@
+@import "@/assets/theme_variables";
+
+#mainSidebar .scrollbar-wrapper {
+  overflow-x: hidden !important;
+  height: calc(100vh - 70px);
+}
+
+#mainSidebar .el-scrollbar {
+  height: 100vh;
+}
+
+.el-aside {
+  overflow: hidden !important;
+}
+
+.el-menu-item i {
+  color: #ffffff;
+}
+
+.el-submenu i {
+  color: #ffffff;
+}
+
+/* El texto de los el-input-number deben estar a la izquierda y no centrados */
+.el-input-number .el-input__inner {
+  text-align: left !important;
+}
+
+
+
+/* Para buscadores */
+.buscador .el-input__inner {
+  border-radius: 20px !important;
+  padding-left: 40px !important;
+  background-color: #fff;
+}
+
+// .el-input__icon {
+//   margin-left: 10px;
+// }
+
+
+// .el-input__prefix {
+//   position: absolute;
+//   text-align: center;
+//   color: var(--el-input-icon-color, var(--el-text-color-placeholder));
+//   transition: all var(--el-transition-duration);
+//   display: inline-flex;
+//   left: 3px !important;
+//   top: 8px !important;
+// }
+
+
+
+/* No deberia haber padding en el append */
+.el-input-group__append {
+  padding: 0px;
+}
+
+/* Hacer sombra de popover mas sutil */
+.el-popover.el-popper .el-popper__arrow::before {
+  border-color: rgba($--color-primary, 1);
+}
+
+.el-popover.el-popper {
+  border-color: rgba($--color-primary, 0.2);
+  box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Cambiar sombras  */
+.el-select-dropdown {
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.el-select {
+  width: 100%;
+}
+
+.el-popover {
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+/**/
+
+/* El buscador de columnas en los datatables ahora tiene una flecha roja*/
+.popbuscar .popper__arrow::after {
+  border-bottom-color: #ca3737 !important;
+}
+
+/* Card */
+/* Hay veces en las que la sombra se corta por estar fuera de un div*/
+.el-card {
+  margin-bottom: 5px;
+}
+
+.el-card.is-always-shadow {
+  /*
+  box-shadow: 0px 1px 1px #00000044 !important;
+ */
+  box-shadow: 0px 1px 10px -4px #00000047 !important;
+}
+
+/* Sacar borde que hace los cards mas suaves */
+.el-card {
+  border: 0px solid black !important;
+  border-radius: 12px !important;
+}
+
+/**/
+
+/* Colorear el fondo del item activo del sidebar */
+.el-menu-item.is-active {
+  font-weight: bold;
+}
+
+.el-menu-item {
+  overflow: hidden;
+  /*Arreglar glitch que muestra barra de navegacion en el menu lateral*/
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  text-overflow: ellipsis;
+  padding-right: 5px !important;
+}
+
+.el-submenu {
+  overflow: hidden;
+  /*Arreglar glitch que muestra barra de navegacion en el menu lateral*/
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.el-radio-button:first-child .el-radio-button__inner {
+  border-radius: 20px 0 0 20px;
+}
+
+.el-radio-button:last-child .el-radio-button__inner {
+  border-radius: 0 20px 20px 0;
+}
+
+/*Para modificar el alto de los tree*/
+.el-tree-node__content {
+  height: 45px;
+}
+
+/* Corregir el alto de las imagenes*/
+.avatar-uploader .el-upload {
+  margin-top: 0px;
+}
+
+/* Sacar boton de el-upload porque abre la ventana 2 veces*/
+/*
+.el-upload__input {
+  visibility: hidden !important;
+}
+.el-upload__tip {
+  margin-top: -40px !important;
+}
+.el-upload--text {
+  height: 220px !important;
+}
+*/
+
+/* Cuando una columna es "fixed", aparece una barra blanca abajo. Sacarla */
+/*
+.el-table__fixed::before,
+.el-table__fixed-right::before {
+  height: 0px !important;
+}
+*/
+
+/* Disminuir padding */
+.el-table__row td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Hacer mas claro los estados del sort de las tablas. Sacar las carets que
+no esten activas */
+/*
+.el-table__header > thead > tr > .is-sortable > div > span > .sort-caret {
+  display: none;
+}
+.el-table__header
+  > thead
+  > tr
+  > .is-sortable.ascending
+  > div
+  > span
+  > .sort-caret.ascending {
+  display: block;
+}
+.el-table__header
+  > thead
+  > tr
+  > .is-sortable.descending
+  > div
+  > span
+  > .sort-caret.descending {
+  display: block;
+}
+.el-table__header > thead > tr > .is-sortable {
+  color: #01579b;
+  font-weight: normal;
+}
+.el-table__header > thead > tr > .is-sortable.ascending,
+.el-table__header > thead > tr > .is-sortable.descending {
+  font-weight: bold;
+}
+*/
+/**/
+
+/*TODO: Usar componente propio*/
+/* Boton de accion en el-card*/
+.el-card__header>div {
+  display: flex;
+}
+
+.el-card__header>div>* {
+  margin: auto;
+}
+
+.el-card__header {
+  padding: 0px !important;
+}
+
+/*
+.el-card__header > div > h1,
+.el-card__header > div > h2,
+.el-card__header > div > h3,
+.el-card__header > div > h4,
+.el-card__header > div > h5,
+.el-card__header > div > h6 {
+  margin-left: 0px;
+}
+.el-card__header > div > .container-acciones {
+  margin-right: 0px;
+  min-width: fit-content;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .el-card__header > div {
+    display: block;
+  }
+  .el-card__header > div > .container-acciones {
+    margin-top: 5px;
+    max-width: fit-content;
+  }
+}
+*/
+/**/
+
+/* Sacar espacio inferior a los labels de los forms. Para cuando label-position="top" */
+/* Weight deberia ser normal */
+
+/* Hacer la mascara de cargando mas transparente*/
+.el-loading-mask {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/*TODO: fijarse en App.vue*/
+/* La mascara de cargando sobrepasa el header, arreglar eso */
+/* Los modales tienen un z-index inicial de 2000*/
+/* Asegurarse de que los modales esten sobre el header, y el header sobre el loading*/
+.el-loading-mask {
+  z-index: 1996 !important;
+}
+
+.el-header {
+  z-index: 1997;
+}
+
+.el-aside {
+  z-index: 1999;
+}
+
+/* Hacer que el texto de las celdas en los datatables bajen de linea por palabras
+en vez de bajar por letra */
+
+.el-table .cell {
+  word-break: break-word !important;
+}
+
+/* Controlar el ancho de modales. Dejar margen si ocupa toda la pantalla */
+.el-dialog {
+  max-width: 95% !important;
+}
+
+/* Por defecto element impide que el texto baje si el boton es chico.
+A veces usamos width: x%, asi que puede que en algunos casos se tenga que bajar */
+.el-button>span {
+  white-space: normal;
+  word-break: normal;
+}
+
+/* Glitch al mostrar modales. Element hace una animacion rara al ocultar el scroll.
+Evitar esa animación*/
+.el-popup-parent--hidden {
+  padding-right: 0px !important;
+}
+
+.el-tabs__item {
+  color: #909399;
+}
+
+.el-table {
+  transition: none !important;
+}
+
+.el-submenu__icon-arrow {
+  visibility: hidden;
+}
+
+.el-form-item {
+  min-height: 40px;
+}
+
+.el-form-item__label {
+  word-break: break-word;
+  line-height: 20px;
+}
+
+.el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label::before,
+.el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label::before {
+  content: "";
+  display: none;
+}
+
+.el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label::after,
+.el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label::after {
+  content: "*";
+  color: #f56c6c;
+  margin-left: 4px;
+}
+
+.el-overlay {
+  background-color: rgba(0, 0, 0, 0.23);
+}
+
+/* Por defecto element impide que el texto baje si el boton es chico.
+A veces usamos width: x%, asi que puede que en algunos casos se tenga que bajar */
+.el-button:focus {
+  outline: 0;
+}
+
+.el-card__header {
+  padding: 0;
+}
+
+.el-submenu__title {
+  display: flex
+}

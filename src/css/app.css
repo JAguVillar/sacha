@@ -1,0 +1,103 @@
+/* FUENTES */
+
+@font-face {
+  font-family: Mortend;
+  src: url(/fonts/mortend/Mortend-Bold.ttf);
+}
+
+@font-face {
+  font-family: Helvetica;
+  font-weight: 300;
+  font-style: normal;
+  src: url(/fonts/helvetica/Helvetica-Light.ttf);
+}
+
+@font-face {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/fonts/helvetica/Helvetica-Regular.ttf);
+}
+
+@font-face {
+  font-family: Helvetica;
+  font-weight: 700;
+  font-style: normal;
+  src: url(/fonts/helvetica/Helvetica-Bold.ttf);
+}
+
+
+/* TEXTOS */
+
+.helvetica {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.mortend {
+  font-family: 'Mortend', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 2.999rem;
+}
+
+h3 {
+  font-size: 2.333rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.666rem;
+}
+
+h6 {
+  font-size: 1.166rem;
+}
+
+/* ANIMACIONES */
+.zoom {
+  transition: transform 0.3s;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
+
+/* VIDEO */
+
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+/* q-tooltip */
+
+.q-tooltip {
+  background: #1D1D1D;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 12spx;
+  color: white !important
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Macamedia",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build_prod": "cross-env NODE_ENV=production vite build",
+    "build_dev": "cross-env NODE_ENV=dev_server vite build --mode dev_server",
+    "build_staging": "cross-env NODE_ENV=staging vite build --mode staging",
+    "serve": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fawmi/vue-google-maps": "^0.9.67",
+    "@quasar/extras": "^1.15.10",
+    "animate.css": "^4.1.1",
+    "axios": "0.21.1",
+    "browser-image-compression": "^2.0.2",
+    "cross-env": "^7.0.3",
+    "dom-to-image-more": "^3.1.6",
+    "firebase": "^9.22.1",
+    "gsap": "^3.12.2",
+    "mixpanel-browser": "^2.47.0",
+    "moment": "^2.29.4",
+    "pinia": "^2.0.29",
+    "qs": "6.11.0",
+    "quasar": "^2.11.5",
+    "swiper": "^9.0.0",
+    "vue": "^3.2.45",
+    "vue-carousel-3d": "^1.0.1",
+    "vue-easy-lightbox": "^1.16.0",
+    "vue-router": "4",
+    "vue3-carousel": "^0.3.1",
+    "vue3-lottie": "^3.0.0",
+    "vue3-simple-typeahead": "^1.0.11"
+  },
+  "devDependencies": {
+    "@quasar/vite-plugin": "^1.3.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "sass": "1.32.12",
+    "vite": "^4.0.0"
+  }
+}
