@@ -5,26 +5,16 @@
       <header class="col bg-secondary">
         <img :src="img_sacha_everton_ruido" alt="" />
         <div class="flex items-center items-center" style="height: 100%">
-          <h1 class="mortend text-white">BIO</h1>
+          <h1 class="mortend text-white">CLUBES</h1>
         </div>
       </header>
       <div class="col-9 bg-white row" style="z-index: 1">
-        <div class="col">
-          <ul>
-            <li class="column" v-for="(lista, l) in lista" :key="l">
-              <h2 class="mortend text-secondary">{{ lista.año }}</h2>
-              <div class="helvetica">
-                {{ lista.texto }}
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="col-auto bg-secondary"
-          style="width: 3px; height: 50%"
-        ></div>
-        <div class="col relative">
-          <img class="bio_img" :src="img_sacha_everton" alt="" />
+        <div class="image-container">
+          <img src="@/assets/imagenes/clubes/everton.jpg" alt="" srcset="" />
+          <img src="@/assets/imagenes/clubes/everton.jpg" alt="" srcset="" />
+          <img src="@/assets/imagenes/clubes/everton.jpg" alt="" srcset="" />
+          <img src="@/assets/imagenes/clubes/everton.jpg" alt="" srcset="" />
+          <img src="@/assets/imagenes/clubes/everton.jpg" alt="" srcset="" />
         </div>
       </div>
     </div>
@@ -118,21 +108,23 @@ header img {
   opacity: 0.2; /* Adjust the opacity as needed */
 }
 
-ul,
-li {
-  list-style: none;
-}
-
-li {
-  height: 180px;
-}
-
-.bio_img {
-  position: absolute;
-  width: 40%;
-  object-fit: contain;
-  right: 0px;
-  top: 0px;
+.image-container {
+  display: flex;
+  width: 80%;
   height: 100%;
+}
+
+.image-container img {
+  width: 0px;
+  flex: 1;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.8s ease;
+}
+
+.image-container img:hover {
+  cursor: pointer;
+  width: 100%;
+  filter: grayscale(0);
 }
 </style>
