@@ -8,13 +8,64 @@
           <h1 class="mortend text-white">CLUBES</h1>
         </div>
       </header>
-      <div class="col-9 bg-white row" style="z-index: 1">
+      <div
+        class="col-9 bg-primary row contenido flex justify-center"
+        style="z-index: 1"
+      >
+        <q-tabs
+          v-model="tab"
+          dense
+          align="justify"
+          style="width: 100%"
+          active-color="secondary"
+          indicator-color="secondary"
+        >
+          <q-tab
+            :ripple="false"
+            class="mortend q-py-md"
+            name="mails"
+            label="ARGENTINA"
+          />
+          <q-tab
+            :ripple="false"
+            class="mortend q-py-md"
+            name="alarms"
+            label="CHILE"
+          />
+          <q-tab
+            :ripple="false"
+            class="mortend q-py-md"
+            name="movies"
+            label="ARABIA"
+          />
+        </q-tabs>
+
         <div class="image-container">
-          <img src="@/assets/imagenes/clubes/everton.jpg" alt="" srcset="" />
-          <img src="@/assets/imagenes/clubes/everton.jpg" alt="" srcset="" />
-          <img src="@/assets/imagenes/clubes/everton.jpg" alt="" srcset="" />
-          <img src="@/assets/imagenes/clubes/everton.jpg" alt="" srcset="" />
-          <img src="@/assets/imagenes/clubes/everton.jpg" alt="" srcset="" />
+          <img
+            src="@/assets/imagenes/clubes/sacha_ucatolica.png"
+            alt=""
+            srcset=""
+          />
+          <img
+            src="@/assets/imagenes/clubes/sacha_ucatolica.png"
+            alt=""
+            srcset=""
+          />
+          <img
+            src="@/assets/imagenes/clubes/sacha_lacalera.jpg"
+            alt=""
+            srcset=""
+          />
+          <img
+            src="@/assets/imagenes/clubes/sacha_everton.jpg"
+            alt=""
+            srcset=""
+          />
+          <img
+            src="@/assets/imagenes/clubes/sacha_huachipato.jpg"
+            alt=""
+            srcset=""
+          />
         </div>
       </div>
     </div>
@@ -46,6 +97,7 @@ export default {
             "En 2012 fichó por Audax Italiano, de Chile, donde se convirtió en máximo goleador de la Primera División de Chile en 2012-C y 2013-T.",
         },
       ],
+      tab: null,
     };
   },
 
@@ -110,7 +162,7 @@ header img {
 
 .image-container {
   display: flex;
-  width: 80%;
+  width: 100%;
   height: 100%;
 }
 
