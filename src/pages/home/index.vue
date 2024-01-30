@@ -1,6 +1,6 @@
 <template>
     <!-- Your component template goes here -->
-    <div class="main bg-primary flex justify-center items-center">
+    <div class="seccion bg-primary flex justify-center items-center">
         <img :src="img_logo" alt="" />
     </div>
 </template>
@@ -48,12 +48,6 @@ export default {
 
 <style scoped>
 /* Your component styles go here */
-.main {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    z-index: 1;
-}
 
 img {
     width: 30%;

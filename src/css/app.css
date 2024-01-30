@@ -1,5 +1,4 @@
 /* FUENTES */
-
 @font-face {
   font-family: Mortend;
   src: url(/fonts/mortend/Mortend-Bold.ttf);
@@ -26,15 +25,106 @@
   src: url(/fonts/helvetica/Helvetica-Bold.ttf);
 }
 
-
-/* TEXTOS */
-
-.helvetica {
-  font-family: 'Helvetica', sans-serif;
+/* COLORES */
+.bg-main {
+  background-color: #FAFAFA;
 }
 
-.mortend {
-  font-family: 'Mortend', sans-serif;
+/* PRIMARIES */
+.bg-primario-1 {
+  background-color: #34040D;
+}
+
+.bg-primario-2 {
+  background-color: #6D091B;
+}
+
+.bg-primario-3 {
+  background-color: #A80D2A;
+}
+
+.bg-primario-4 {
+  background-color: #FF1541;
+}
+
+.text-primario-1 {
+  color: #34040D;
+}
+
+.text-primario-2 {
+  color: #6D091B;
+}
+
+.text-primario-3 {
+  color: #A80D2A;
+}
+
+.text-primario-4 {
+  color: #FF1541;
+}
+
+/* SECONDARIES */
+.bg-secundario-1 {
+  background-color: #161C2D;
+}
+
+.bg-secundario-2 {
+  background-color: #163164;
+}
+
+.text-secundario-1 {
+  color: #161C2D;
+}
+
+.text-secundario-2 {
+  color: #163164;
+}
+
+/* ACCENTS */
+.bg-accent-1 {
+  background-color: #EEF5FF;
+}
+
+.bg-accent-2 {
+  background-color: #8E98AD;
+}
+
+.bg-accent-3 {
+  background-color: #A6ADBB;
+}
+
+.bg-accent-4 {
+  background-color: #DCDDE0;
+}
+
+.text-accent-1 {
+  color: #EEF5FF;
+}
+
+.text-accent-2 {
+  color: #8E98AD;
+}
+
+.text-accent-3 {
+  color: #A6ADBB;
+}
+
+.text-accent-4 {
+  color: #DCDDE0;
+}
+
+
+/* GRADIENTS */
+.bg-gradient-1 {
+  /* set gradient from top to bottom */
+
+  background: linear-gradient(90deg, #110533 12.14%, #7D253E 91.12%);
+
+}
+
+/* TEXTOS */
+.helvetica {
+  font-family: 'Helvetica', sans-serif;
 }
 
 h1,
@@ -43,6 +133,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Mortend', sans-serif;
   margin: 0px;
 }
 
@@ -79,25 +170,31 @@ h6 {
   transform: scale(1.05);
 }
 
-/* VIDEO */
+.seccion {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
 
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  scroll-behavior: smooth;
 }
 
-/* q-tooltip */
+.seccion-cabecera {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  /* padding-left: 200px; */
+  /* padding-left: calc(50vw - 750px); */
+  padding-left: clamp(100px, calc(50vw - 750px), 250px);
+}
 
-.q-tooltip {
-  background: #1D1D1D;
-  border-radius: 10px;
-  font-family: Poppins;
-  font-weight: 700;
-  font-size: 12spx;
-  color: white !important
+.seccion-cabecera img {
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: -220px;
+  left: calc(50% - 50vw);
+  opacity: 0.2;
+  /* Adjust the opacity as needed */
 }

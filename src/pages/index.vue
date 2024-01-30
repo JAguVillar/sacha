@@ -1,57 +1,36 @@
 <template>
-  <!-- Your component template goes here -->
-  <div>
     <Home></Home>
     <Bio></Bio>
-    <Clubes></Clubes>
-  </div>
+    <Metricas></Metricas>
+    <FichaTecnica></FichaTecnica>
+    <!-- <Clubes></Clubes> -->
+    <Comunidad></Comunidad>
+    <Footer></Footer>
 </template>
 
 <script>
 import Home from "./home/index.vue";
 import Bio from "./bio/index.vue";
+import Metricas from "./metricas/index.vue";
+import FichaTecnica from "./ficha_tecnica/index.vue";
 import Clubes from "./clubes/index.vue";
+import Comunidad from "./comunidad/index.vue";
+import Footer from "./footer/index.vue";
+
 export default {
-  // Component data
-  components: {
-    Home,
-    Bio,
-    Clubes,
-  },
-  data() {
-    return {
-      message: "Hello, Vue 3!",
-    };
-  },
-
-  // Component methods
-  methods: {
-    // Your methods go here
-  },
-
-  // Component lifecycle hooks
-  beforeCreate() {
-    // Executed before the component is created
-  },
-  created() {
-    // Executed after the component is created
-  },
-  beforeMount() {
-    // Executed before the component is mounted to the DOM
-  },
-  mounted() {
-    // Executed after the component is mounted to the DOM
-  },
-
-  // Component computed properties
-  computed: {
-    // Your computed properties go here
-  },
-
-  // Component watch options
-  watch: {
-    // Your watched properties go here
-  },
+    // Component data
+    components: {
+        Home,
+        Bio,
+        Metricas,
+        FichaTecnica,
+        Clubes,
+        Comunidad,
+        Footer,
+    },
+    data() {
+        return {};
+    },
 };
 </script>
 
