@@ -35,7 +35,15 @@
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div
+                class="row text-white justify-around items-center bg-black relative"
+                style="padding: 30px"
+            >
+                <div class="">© 2024 Macamedia</div>
+                <div class="">Desarrollado por Macamedia</div>
+
+                <div class="">Todos los derechos reservados</div>
+            </div>
         </div>
     </div>
 </template>
