@@ -1,23 +1,24 @@
 <template>
     <q-layout view="hHh lpR fFf">
-        <!-- <q-header class="bg-primary text-white" height-hint="98">
+        <q-header
+            class="bg-primary text-white flex items-center"
+            height-hint="98"
+            style="height: 144px; padding: 0 200px"
+        >
             <q-toolbar>
-                <q-toolbar-title>
-                    <q-avatar>
-                        <img
-                            src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg"
-                        />
-                    </q-avatar>
-                    Title
-                </q-toolbar-title>
-            </q-toolbar>
+                <q-btn flat round dense icon="menu" class="q-mr-sm" />
 
-            <q-tabs align="left">
-                <q-route-tab to="/page1" label="Page One" />
-                <q-route-tab to="/page2" label="Page Two" />
-                <q-route-tab to="/page3" label="Page Three" />
-            </q-tabs>
-        </q-header> -->
+                <q-toolbar-title class="flex justify-center">
+                    <img
+                        width="136"
+                        src="@/assets/imagenes/logos/logo_full_sacha.png"
+                        alt=""
+                    />
+                </q-toolbar-title>
+
+                <div></div>
+            </q-toolbar>
+        </q-header>
 
         <q-page-container>
             <router-view />

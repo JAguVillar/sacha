@@ -13,13 +13,13 @@
             </header>
             <div
                 class="col-9 bg-primary row contenido flex justify-center"
-                style="z-index: 1; padding: 100px 150px 0px 150px"
+                style="z-index: 1; padding: 100px 200px 0px 200px"
             >
                 <q-tabs
                     v-model="tab"
                     dense
                     align="justify"
-                    style="width: 100%"
+                    style="width: 100%; padding-bottom: 40px"
                     active-color="secondary"
                     indicator-color="secondary"
                 >
@@ -36,27 +36,27 @@
 
                 <div class="image-container">
                     <img
-                        src="@/assets/imagenes/clubes/everton.jpg"
+                        src="@/assets/imagenes/clubes/sacha_everton.jpg"
                         alt=""
                         srcset=""
                     />
                     <img
-                        src="@/assets/imagenes/clubes/everton.jpg"
+                        src="@/assets/imagenes/clubes/sacha_everton.jpg"
                         alt=""
                         srcset=""
                     />
                     <img
-                        src="@/assets/imagenes/clubes/everton.jpg"
+                        src="@/assets/imagenes/clubes/sacha_everton.jpg"
                         alt=""
                         srcset=""
                     />
                     <img
-                        src="@/assets/imagenes/clubes/everton.jpg"
+                        src="@/assets/imagenes/clubes/sacha_everton.jpg"
                         alt=""
                         srcset=""
                     />
                     <img
-                        src="@/assets/imagenes/clubes/everton.jpg"
+                        src="@/assets/imagenes/clubes/sacha_everton.jpg"
                         alt=""
                         srcset=""
                     />
@@ -105,7 +105,7 @@ header img {
 
 .image-container {
     display: flex;
-    width: 80%;
+    width: 100%;
     height: 100%;
 }
 

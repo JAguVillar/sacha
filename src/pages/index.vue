@@ -3,7 +3,7 @@
     <Bio></Bio>
     <Metricas></Metricas>
     <FichaTecnica></FichaTecnica>
-    <!-- <Clubes></Clubes> -->
+    <Clubes></Clubes>
     <Comunidad></Comunidad>
     <Footer></Footer>
 </template>

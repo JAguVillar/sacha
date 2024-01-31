@@ -1,7 +1,7 @@
 <template>
     <!-- Your component template goes here -->
-    <div class="bg-primary seccion">
-        <!-- <div class="seccion-cabecera col bg-primario-3">
+    <div class="bg-primary">
+        <div class="seccion-cabecera col bg-primario-3">
             <img
                 :src="img_sacha_everton_ruido"
                 alt=""
@@ -10,14 +10,20 @@
             <div class="flex items-center items-center" style="height: 100%">
                 <h1 class="mortend text-white" style="z-index: 2">METRICAS</h1>
             </div>
-        </div> -->
-        <div style="max-height: 100%; height: 100vh">
+        </div>
+        <div style="max-height: 100%; height: 100vh; padding: 0px 210px">
             <div class="grilla text-white">
-                <div class="flex justify-center items-center column">
+                <div
+                    class="flex justify-center items-center column"
+                    style="border-bottom: 2px solid #6d091b"
+                >
                     <h1>498</h1>
                     <div class="helvetica">Partidos jugados</div>
                 </div>
-                <div class="flex justify-center items-center column">
+                <div
+                    class="flex justify-center items-center column"
+                    style="border-bottom: 2px solid #6d091b"
+                >
                     <h1>235</h1>
                     <div class="helvetica">Goles marcados</div>
                 </div>
@@ -29,7 +35,6 @@
                     <h1>3</h1>
                     <div class="helvetica">Titulos nacionales</div>
                 </div>
-                |
             </div>
         </div>
     </div>
@@ -56,6 +61,7 @@ export default {
     grid-template-rows: 1fr 1fr;
     max-height: 100%;
     height: 100vh;
+    gap: 20px;
 }
 
 ul,

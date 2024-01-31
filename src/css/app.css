@@ -198,3 +198,52 @@ h6 {
   opacity: 0.2;
   /* Adjust the opacity as needed */
 }
+
+/* .macamedia {
+  background: none;
+  transform: ease 1s;
+}
+
+.macamedia:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #4ce07d 50%, #4ce07d 100%);
+} */
+
+.bio-img {
+  animation: fade-in-right linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 700px;
+}
+
+.ficha_tecnica-img {
+  animation: fade-in-left linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 700px;
+}
+
+
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    right: -250px;
+  }
+
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    left: -250px;
+  }
+
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}

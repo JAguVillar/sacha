@@ -1,6 +1,9 @@
 <template>
     <!-- Your component template goes here -->
-    <div class="seccion bg-primary flex justify-center items-center">
+    <div
+        class="bg-primary flex justify-center items-center"
+        style="height: 100vh; max-width: 100%"
+    >
         <img :src="img_logo" alt="" />
     </div>
 </template>
