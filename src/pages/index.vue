@@ -1,11 +1,11 @@
 <template>
-    <Home></Home>
-    <Bio></Bio>
-    <Metricas></Metricas>
-    <FichaTecnica></FichaTecnica>
-    <Clubes></Clubes>
-    <Comunidad></Comunidad>
-    <Footer></Footer>
+  <Home></Home>
+  <Bio></Bio>
+  <Metricas></Metricas>
+  <FichaTecnica></FichaTecnica>
+  <!-- <Clubes></Clubes> -->
+  <Comunidad></Comunidad>
+  <Footer></Footer>
 </template>
 
 <script>
@@ -18,19 +18,19 @@ import Comunidad from "./comunidad/index.vue";
 import Footer from "./footer/index.vue";
 
 export default {
-    // Component data
-    components: {
-        Home,
-        Bio,
-        Metricas,
-        FichaTecnica,
-        Clubes,
-        Comunidad,
-        Footer,
-    },
-    data() {
-        return {};
-    },
+  // Component data
+  components: {
+    Home,
+    Bio,
+    Metricas,
+    FichaTecnica,
+    Clubes,
+    Comunidad,
+    Footer,
+  },
+  data() {
+    return {};
+  },
 };
 </script>
 

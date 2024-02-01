@@ -1,119 +1,124 @@
 <template>
-    <!-- Your component template goes here -->
-    <div class="bg-primary" style="width: 100vw; max-width: 100%">
-        <div class="column" style="padding-top: 95px">
-            <div
-                class="row text-white justify-between items-center bg-gradient-1"
-                style="padding: 30px 470px"
-            >
-                <div class="">sportwayonline</div>
-                <div class="">
-                    <img
-                        src="@/assets/imagenes/logos/sportway_logo.png"
-                        alt=""
-                        srcset=""
-                    />
-                </div>
-                <div class="">sportwayonline.com</div>
-            </div>
-            <!-- <div
-                class="column text-white flex justify-around items-center"
-                style="padding: 250px 0px"
-            >
-                <div
-                    style="width: 500px; height: 500px"
-                    class="column flex items-center text-center justify-around"
-                >
-                    <div>
-                        <h5>HOME</h5>
-                    </div>
-                    <div class="separador"></div>
-                    <div>
-                        <h5>PERFIL</h5>
-                    </div>
-                    <div class="separador"></div>
-                    <div>
-                        <h5>CARRERA</h5>
-                    </div>
-                    <div class="separador"></div>
-                    <div>
-                        <h5>SOCIAL</h5>
-                    </div>
-                </div>
-            </div> -->
-            <div
-                class="row text-white justify-between items-center bg-black relative"
-                style="width: 100%; padding: 30px"
-            >
-                <div class="">© 2024 Macamedia</div>
-                <div class="">
-                    Desarrollado por <span class="macamedia">Macamedia</span>
-                </div>
+  <!-- Your component template goes here -->
+  <div class="bg-primary container" style="width: 100vw; max-width: 100%">
+    <div class="column wrapper" style="padding-top: 95px">
+      <div class="seccion-sportway bg-gradient-1">
+        <div class="sportway">sportwayonline</div>
 
-                <div class="">Todos los derechos reservados</div>
-            </div>
-        </div>
+        <img
+          class="sportway-logo"
+          src="@/assets/imagenes/logos/sportway_logo.png"
+          alt=""
+          srcset=""
+        />
+
+        <div class="sportway-url">sportwayonline.com</div>
+      </div>
+      <footer>
+        <div class="copyright">© 2024 Macamedia</div>
+        <div class="desarrollado">Desarrollado por Macamedia</div>
+        <div class="derechos">Todos los derechos reservados</div>
+      </footer>
     </div>
+  </div>
 </template>
 
 <script>
 import Logo from "@/assets/imagenes/logos/sacha.png";
 export default {
-    // Component data
-    data() {
-        return {
-            img_logo: Logo,
-        };
-    },
+  // Component data
+  data() {
+    return {
+      img_logo: Logo,
+    };
+  },
 
-    // Component methods
-    methods: {
-        // Your methods go here
-    },
+  // Component methods
+  methods: {
+    // Your methods go here
+  },
 
-    // Component lifecycle hooks
-    beforeCreate() {
-        // Executed before the component is created
-    },
-    created() {
-        // Executed after the component is created
-    },
-    beforeMount() {
-        // Executed before the component is mounted to the DOM
-    },
-    mounted() {
-        // Executed after the component is mounted to the DOM
-    },
+  // Component lifecycle hooks
+  beforeCreate() {
+    // Executed before the component is created
+  },
+  created() {
+    // Executed after the component is created
+  },
+  beforeMount() {
+    // Executed before the component is mounted to the DOM
+  },
+  mounted() {
+    // Executed after the component is mounted to the DOM
+  },
 
-    // Component computed properties
-    computed: {
-        // Your computed properties go here
-    },
+  // Component computed properties
+  computed: {
+    // Your computed properties go here
+  },
 
-    // Component watch options
-    watch: {
-        // Your watched properties go here
-    },
+  // Component watch options
+  watch: {
+    // Your watched properties go here
+  },
 };
 </script>
 
 <style scoped>
 /* Your component styles go here */
-
-.img-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-.img-container img {
-    width: 0px;
-    flex: 1;
-    object-fit: cover;
+.container {
+  width: 100vw;
+  max-width: 100%;
 }
 
-.separador {
-    width: 100%;
-    height: 2px;
-    background-color: #8e98ad;
+.wrapper {
+  padding-top: 95px;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.seccion-sportway {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 470px;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
+}
+
+footer div {
+  font-size: 12px;
+}
+
+footer .copyright {
+  text-align: left;
+}
+footer .desarrollado {
+  text-align: center;
+}
+footer .derechos {
+  text-align: right;
+}
+
+@media (max-width: 1280px) {
+  .seccion-sportway {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+  }
+
+  .sportway-logo {
+    margin: auto;
+  }
 }
 </style>

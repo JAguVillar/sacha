@@ -161,6 +161,31 @@ h6 {
   font-size: 1.166rem;
 }
 
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 2.999rem;
+  }
+  h2 {
+    font-size: 2.333rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 1.666rem;
+  }
+  
+  h5 {
+    font-size: 1.666rem;
+  }
+  
+  h6 {
+    font-size: 1.166rem;
+  }
+}
+
 /* ANIMACIONES */
 .zoom {
   transition: transform 0.3s;
@@ -179,8 +204,10 @@ h6 {
 }
 
 .seccion-cabecera {
+  padding-top: 48px;
+  padding-bottom: 48px;
   position: relative;
-  height: 250px;
+  height: auto;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -197,6 +224,17 @@ h6 {
   left: calc(50% - 50vw);
   opacity: 0.2;
   /* Adjust the opacity as needed */
+}
+
+@media (max-width: 1280px) {
+ .seccion-cabecera img {
+   display: none;
+   
+  }
+ .seccion-cabecera {
+   
+   padding: 18px;
+  }
 }
 
 /* .macamedia {
