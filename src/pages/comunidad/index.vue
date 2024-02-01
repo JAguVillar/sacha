@@ -25,9 +25,7 @@ export default {
   },
 
   // Component methods
-  methods: {
-    // Your methods go here
-  },
+  methods: {},
 
   // Component lifecycle hooks
   beforeCreate() {
